@@ -13,62 +13,63 @@
 
     <title>TANGAPP</title>
 </head>
-<body class="font-robotoCond text-slate-700">
-    
+<body class="text-slate-600">
 
+   <section class="flex justify-between items-center py-4 px-6  md:hidden">
 
-
-    <section id="container" class="">
-
-        <div id="navBar" class="">
-            <div id="navWrapper">
-                <div class="flex w-full border justify-between items-center p-3 relative">
-                    <section id="logo" class="flex gap-3 justify-center items-center">
-                        <div class=" h-8 rounded-full overflow-hidden"><img src="../img/yinyang.png" class="h-8" alt=""></div>
-                        <span class="text-2xl font-bold">LOGO</span>
-                    </section>
-
-                    <nav id="nav" class="md:block absolute top-0 right-0">
-                        <div class="flex justify-center items-center">
-                            <ul class="flex justify-center items-center flex-col gap-8">
-                                <li>
-                                    <div>DASHBOARD</div>
-                                </li>
-                                <li>
-                                    <div>MAIN MASTER</div>
-                                </li>
-                                <li>
-                                    <div>CONTRIBUTION</div>
-                                </li>
-                                <li>
-                                    <div>REPORT</div>
-                                </li>
-                            </ul>
-
-                            <section id="profileWrapper">
-                                <div id="" class="flex">
-                                    <div class="h-8 w-8 rounded-full bg-slate-300"></div>
-                                    <span>hai</span>
-                                </div>
-                            </section>
-                        </div>
-                    </nav>
-
-                    <section id="menu" class="md:hidden">
-                        <button class="flex justify-center items-center h-8 border">
-                            <span class=" material-symbols-outlined text-3xl font-bold">menu</span>
-
-                        </button>
-                    </section>
-
-
-                </div>
+      <div id="logoWrapper">  
+         <div class="flex justify-center items-center gap-4">
+            <div class="w-10 h-10 bg-slate-300 rounded-full">
+               <img src="../img/yinyang.png" alt="">
             </div>
-        </div>
+            <span class="font-semibold">
+               TANGAPP
+            </span>
+         </div>
+      </div>
+
+      <button id="asideBtn" class=" w-8 h-8 flex justify-center items-center hover:bg-slate-100 rounded-lg">
+         <span class="material-symbols-outlined">
+            browse
+            </span>
+      </button>
+   </section>
+
+   <aside id="asideBar" class="hidden fixed w-64 bg-slate-200  h-screen z-10 top-0 left-0 transition-transform duration-100 ">
+      <div class="flex flex-col h-full px-3 py-4 overflow-y-auto">
+         <a href="#" class="flex justify-start items-center gap-4 p-2 mb-5 w-full border border-slate-400">
+            <div class="bg-slate-300 rounded-full h-8 w-8">
+
+            </div>
+            <span class="font-semibold">TANGAPP</span>
+         </a>
+
+         <ul class="space-y-2 font-medium">
+            <li><a href="#" class="border border-slate-400 flex items-center gap-2 p-2 rounded-md hover:bg-slate-300"><span class="material-symbols-outlined">
+               space_dashboard
+               </span>Dashboard</a></li>
+            <li><a href="#" class="border border-slate-400 flex items-center gap-2 p-2 rounded-md hover:bg-slate-300"><span class="material-symbols-outlined">
+               groups
+               </span>Contribution</a></li>
+            <li><a href="#" class="border border-slate-400 flex items-center gap-2 p-2 rounded-md hover:bg-slate-300"><span class="material-symbols-outlined">
+               event
+               </span><span class="grow">Events</span><span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></a></li>
+            <li><a href="#" class="border border-slate-400 flex items-center gap-2 p-2 rounded-md hover:bg-slate-300"><span class="material-symbols-outlined">
+               person
+               </span>User</a></li>
+            <li><a href="#" class="border border-slate-400 flex items-center gap-2 p-2 rounded-md hover:bg-slate-300"><span class="material-symbols-outlined">
+               markunread_mailbox
+               </span><span class="grow">Inbox</span><div class="w-4 h-4 bg-red-400 rounded-full text-sm flex justify-center items-center text-white">1</div></a></li>
+         </ul>
+
+      </div>
+   </aside>
 
 
 
 
-    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
